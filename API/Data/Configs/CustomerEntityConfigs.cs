@@ -21,6 +21,6 @@ public class CustomerEntityConfigs : IEntityTypeConfiguration<Customer>
 		builder.Property(c=>c.Age).IsRequired();
 		
 		// Ensure that the age is between 18 and 100
-		builder.ToTable("Customers").HasCheckConstraint("CK_Customers_Age", "\"Age\" >= 18 AND \"Age\" <= 100");
+		builder.ToTable(t=>t.HasCheckConstraint("CK_Customer_age", "\"Age\" BETWEEN 18 AND 100"));
 	}
 }

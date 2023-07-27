@@ -45,9 +45,9 @@ namespace API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", null, t =>
+                    b.ToTable("Customers", t =>
                         {
-                            t.HasCheckConstraint("CK_Customers_Age", "\"Age\" >= 18 AND \"Age\" <= 100");
+                            t.HasCheckConstraint("CK_Customer_age", "\"Age\" BETWEEN 18 AND 100");
                         });
                 });
 

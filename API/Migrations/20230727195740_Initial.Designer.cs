@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230727194833_Initial")]
+    [Migration("20230727195740_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -48,9 +48,9 @@ namespace API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", null, t =>
+                    b.ToTable("Customers", t =>
                         {
-                            t.HasCheckConstraint("CK_Customers_Age", "\"Age\" >= 18 AND \"Age\" <= 100");
+                            t.HasCheckConstraint("CK_Customer_age", "\"Age\" BETWEEN 18 AND 100");
                         });
                 });
 

@@ -25,7 +25,7 @@ namespace API.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Id);
-                    table.CheckConstraint("CK_Customers_Age", "\"Age\" >= 18 AND \"Age\" <= 100");
+                    table.CheckConstraint("CK_Customer_age", "\"Age\" BETWEEN 18 AND 100");
                 });
 
             migrationBuilder.CreateTable(
