@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ln4uLBScHurA0Rl7icdKXfClfJDxOJWzbjdb+wUOIvPxtejBdHZcPPcV/cpDfSYVw5aMkCkVYrOW5HNuMe//cg==",
+  "dgSpecHash": "rNbC9mECCX5bl3rqMXnGmaMI6iux4XlmvFacXPP4FCrfMfXIYbLHIvva5M6R+nbYObe2R8K+2j8lTIj/QXwDcg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\MBARKT3STO\\Desktop\\ASP With EF And PostgreSQL DEMO\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\MBARKT3STO\\Desktop\\ASP With EF And PostgreSQL DEMO\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MBARKT3STO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\MBARKT3STO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

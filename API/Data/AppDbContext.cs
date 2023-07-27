@@ -13,6 +13,11 @@ public class AppDbContext: DbContext
 	{
 	}
 	
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
+	{
+		modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+	}
+	
 	public DbSet<Customer> Customers { get; set; }
 	public DbSet<Order> Orders { get; set; }
 	public DbSet<Product> Products { get; set; }

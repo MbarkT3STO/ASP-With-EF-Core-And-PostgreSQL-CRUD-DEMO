@@ -17,5 +17,10 @@ public class CustomerEntityConfigs : IEntityTypeConfiguration<Customer>
 		
 		builder.Property(c=>c.FirstName).IsRequired().HasMaxLength(50);
 		builder.Property(c=>c.LastName).IsRequired().HasMaxLength(50);
+		
+		builder.Property(c=>c.Age).IsRequired();
+		
+		// Ensure that the age is between 18 and 100
+		builder.ToTable("Customers").HasCheckConstraint("CK_Customers_Age", "\"Age\" >= 18 AND \"Age\" <= 100");
 	}
 }
